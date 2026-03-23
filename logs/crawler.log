@@ -1,0 +1,20 @@
+2026-03-23 15:17:34,757 [INFO] === Web Crawling Pipeline Start ===
+2026-03-23 15:17:34,757 [INFO] source: site_a
+2026-03-23 15:17:34,757 [INFO] max_pages: 2
+2026-03-23 15:17:34,757 [INFO] limit: 10
+2026-03-23 15:17:34,757 [INFO] use_browser: False
+2026-03-23 15:17:34,757 [INFO] log_level: INFO
+2026-03-23 15:17:34,757 [INFO] Pipeline initialized (no crawling yet)
+2026-03-23 15:17:34,757 [INFO] === Pipeline Finished ===
+2026-03-23 20:00:00,789 [INFO] === Web Crawling Pipeline Start ===
+2026-03-23 20:00:00,789 [INFO] source: site_a
+2026-03-23 20:00:00,789 [INFO] max_pages: 2
+2026-03-23 20:00:00,789 [INFO] limit: 10
+2026-03-23 20:00:00,789 [INFO] use_browser: False
+2026-03-23 20:00:00,789 [INFO] log_level: INFO
+2026-03-23 20:00:00,789 [INFO] Fetching page: https://books.toscrape.com/catalogue/page-1.html
+2026-03-23 20:00:01,931 [INFO] Page 1 processed. Current record count: 10
+2026-03-23 20:00:01,931 [INFO] Crawling finished. Total raw records: 10
+2026-03-23 20:00:01,932 [INFO] Raw records saved: data/raw/site_a_20260323_200001.json
+2026-03-23 20:00:01,932 [INFO] Raw record count: 10
+2026-03-23 20:00:01,932 [INFO] === Pipeline Finished ===
