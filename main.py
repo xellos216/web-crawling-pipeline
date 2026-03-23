@@ -6,8 +6,10 @@ from src.monitoring.logger import setup_logger
 from src.storage.json_writer import (
     save_invalid_records,
     save_raw_records,
+    save_transformed_records,
     save_valid_records,
 )
+from src.transformers.listing_transformer import transform_listings
 from src.validators.listing_validator import validate_listings
 
 
@@ -38,13 +40,21 @@ def main():
     valid_path = save_valid_records(valid_records, args.source)
     invalid_path = save_invalid_records(invalid_records, args.source)
 
+    transformed_records = transform_listings(valid_records)
+    transformed_path = save_transformed_records(
+        transformed_records,
+        args.source,
+    )
+
     logger.info("Raw records saved: %s", raw_path)
     logger.info("Valid records saved: %s", valid_path)
     logger.info("Invalid records saved: %s", invalid_path)
+    logger.info("Transformed records saved: %s", transformed_path)
 
     logger.info("Raw record count: %s", len(raw_records))
     logger.info("Valid record count: %s", len(valid_records))
     logger.info("Invalid record count: %s", len(invalid_records))
+    logger.info("Transformed record count: %s", len(transformed_records))
 
     logger.info("=== Pipeline Finished ===")
 

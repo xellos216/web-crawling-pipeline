@@ -30,6 +30,7 @@ def crawl_site_a(max_pages: int, limit: int) -> list[dict]:
 
         response = requests.get(page_url, headers=headers, timeout=10)
         response.raise_for_status()
+        response.encoding = "utf-8"
 
         soup = BeautifulSoup(response.text, "html.parser")
         articles = soup.select("article.product_pod")
