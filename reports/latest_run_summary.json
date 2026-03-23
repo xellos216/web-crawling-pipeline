@@ -1,0 +1,18 @@
+{
+  "source": "site_a",
+  "started_at": "2026-03-23T20:44:52",
+  "finished_at": "2026-03-23T20:44:54",
+  "duration_seconds": 1.037734,
+  "counts": {
+    "raw": 10,
+    "valid": 10,
+    "invalid": 0,
+    "transformed": 10
+  },
+  "paths": {
+    "raw": "data/raw/site_a_raw_20260323_204454.json",
+    "valid": "data/validated/site_a_valid_20260323_204454.json",
+    "invalid": "data/validated/site_a_invalid_20260323_204454.json",
+    "transformed": "data/transformed/site_a_normalized_20260323_204454.json"
+  }
+}

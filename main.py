@@ -11,11 +11,18 @@ from src.storage.json_writer import (
 )
 from src.transformers.listing_transformer import transform_listings
 from src.validators.listing_validator import validate_listings
+from datetime import datetime
+from src.monitoring.run_summary import (
+    build_run_summary,
+    save_run_summary,
+)
 
 
 def main():
     args = parse_args()
     logger = setup_logger(args.log_level)
+
+    started_at = datetime.now()
 
     logger.info("=== Web Crawling Pipeline Start ===")
     logger.info("source: %s", args.source)
@@ -56,6 +63,25 @@ def main():
     logger.info("Invalid record count: %s", len(invalid_records))
     logger.info("Transformed record count: %s", len(transformed_records))
 
+    finished_at = datetime.now()
+
+    summary = build_run_summary(
+        source=args.source,
+        raw_count=len(raw_records),
+        valid_count=len(valid_records),
+        invalid_count=len(invalid_records),
+        transformed_count=len(transformed_records),
+        raw_path=raw_path,
+        valid_path=valid_path,
+        invalid_path=invalid_path,
+        transformed_path=transformed_path,
+        started_at=started_at,
+        finished_at=finished_at,
+    )
+
+    summary_path = save_run_summary(summary)
+
+    logger.info("Run summary saved: %s", summary_path)
     logger.info("=== Pipeline Finished ===")
 
 

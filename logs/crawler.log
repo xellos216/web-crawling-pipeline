@@ -82,3 +82,60 @@
 2026-03-23 20:26:06,965 [INFO] Invalid record count: 0
 2026-03-23 20:26:06,965 [INFO] Transformed record count: 10
 2026-03-23 20:26:06,965 [INFO] === Pipeline Finished ===
+2026-03-23 20:41:48,334 [INFO] === Web Crawling Pipeline Start ===
+2026-03-23 20:41:48,334 [INFO] source: site_a
+2026-03-23 20:41:48,334 [INFO] max_pages: 2
+2026-03-23 20:41:48,334 [INFO] limit: 10
+2026-03-23 20:41:48,334 [INFO] use_browser: False
+2026-03-23 20:41:48,334 [INFO] log_level: INFO
+2026-03-23 20:41:48,334 [INFO] Fetching page: https://books.toscrape.com/catalogue/page-1.html
+2026-03-23 20:41:49,349 [INFO] Page 1 processed. Current record count: 10
+2026-03-23 20:41:49,349 [INFO] Crawling finished. Total raw records: 10
+2026-03-23 20:41:49,350 [INFO] Raw records saved: data/raw/site_a_raw_20260323_204149.json
+2026-03-23 20:41:49,351 [INFO] Valid records saved: data/validated/site_a_valid_20260323_204149.json
+2026-03-23 20:41:49,351 [INFO] Invalid records saved: data/validated/site_a_invalid_20260323_204149.json
+2026-03-23 20:41:49,351 [INFO] Transformed records saved: data/transformed/site_a_normalized_20260323_204149.json
+2026-03-23 20:41:49,351 [INFO] Raw record count: 10
+2026-03-23 20:41:49,351 [INFO] Valid record count: 10
+2026-03-23 20:41:49,351 [INFO] Invalid record count: 0
+2026-03-23 20:41:49,351 [INFO] Transformed record count: 10
+2026-03-23 20:41:49,351 [INFO] === Pipeline Finished ===
+2026-03-23 20:43:32,522 [INFO] === Web Crawling Pipeline Start ===
+2026-03-23 20:43:32,522 [INFO] source: site_a
+2026-03-23 20:43:32,522 [INFO] max_pages: 2
+2026-03-23 20:43:32,522 [INFO] limit: 10
+2026-03-23 20:43:32,522 [INFO] use_browser: False
+2026-03-23 20:43:32,522 [INFO] log_level: INFO
+2026-03-23 20:43:32,522 [INFO] Fetching page: https://books.toscrape.com/catalogue/page-1.html
+2026-03-23 20:43:33,556 [INFO] Page 1 processed. Current record count: 10
+2026-03-23 20:43:33,556 [INFO] Crawling finished. Total raw records: 10
+2026-03-23 20:43:33,562 [INFO] Raw records saved: data/raw/site_a_raw_20260323_204333.json
+2026-03-23 20:43:33,562 [INFO] Valid records saved: data/validated/site_a_valid_20260323_204333.json
+2026-03-23 20:43:33,562 [INFO] Invalid records saved: data/validated/site_a_invalid_20260323_204333.json
+2026-03-23 20:43:33,562 [INFO] Transformed records saved: data/transformed/site_a_normalized_20260323_204333.json
+2026-03-23 20:43:33,562 [INFO] Raw record count: 10
+2026-03-23 20:43:33,562 [INFO] Valid record count: 10
+2026-03-23 20:43:33,562 [INFO] Invalid record count: 0
+2026-03-23 20:43:33,562 [INFO] Transformed record count: 10
+2026-03-23 20:43:33,562 [INFO] === Pipeline Finished ===
+2026-03-23 20:43:33,562 [INFO] Run summary saved: reports/latest_run_summary.json
+2026-03-23 20:43:33,562 [INFO] === Pipeline Finished ===
+2026-03-23 20:44:52,992 [INFO] === Web Crawling Pipeline Start ===
+2026-03-23 20:44:52,992 [INFO] source: site_a
+2026-03-23 20:44:52,992 [INFO] max_pages: 2
+2026-03-23 20:44:52,992 [INFO] limit: 10
+2026-03-23 20:44:52,992 [INFO] use_browser: False
+2026-03-23 20:44:52,992 [INFO] log_level: INFO
+2026-03-23 20:44:52,992 [INFO] Fetching page: https://books.toscrape.com/catalogue/page-1.html
+2026-03-23 20:44:54,028 [INFO] Page 1 processed. Current record count: 10
+2026-03-23 20:44:54,028 [INFO] Crawling finished. Total raw records: 10
+2026-03-23 20:44:54,030 [INFO] Raw records saved: data/raw/site_a_raw_20260323_204454.json
+2026-03-23 20:44:54,030 [INFO] Valid records saved: data/validated/site_a_valid_20260323_204454.json
+2026-03-23 20:44:54,030 [INFO] Invalid records saved: data/validated/site_a_invalid_20260323_204454.json
+2026-03-23 20:44:54,030 [INFO] Transformed records saved: data/transformed/site_a_normalized_20260323_204454.json
+2026-03-23 20:44:54,030 [INFO] Raw record count: 10
+2026-03-23 20:44:54,030 [INFO] Valid record count: 10
+2026-03-23 20:44:54,030 [INFO] Invalid record count: 0
+2026-03-23 20:44:54,030 [INFO] Transformed record count: 10
+2026-03-23 20:44:54,030 [INFO] Run summary saved: reports/latest_run_summary.json
+2026-03-23 20:44:54,030 [INFO] === Pipeline Finished ===
