@@ -159,3 +159,47 @@
 2026-03-23 20:48:56,057 [INFO] Transformed record count: 10
 2026-03-23 20:48:56,057 [INFO] Run summary saved: reports/latest_run_summary.json
 2026-03-23 20:48:56,057 [INFO] === Pipeline Finished ===
+2026-03-23 21:06:09,787 [INFO] === Web Crawling Pipeline Start ===
+2026-03-23 21:06:09,787 [INFO] source: site_a
+2026-03-23 21:06:09,787 [INFO] max_pages: 2
+2026-03-23 21:06:09,787 [INFO] limit: 10
+2026-03-23 21:06:09,787 [INFO] use_browser: False
+2026-03-23 21:06:09,787 [INFO] log_level: INFO
+2026-03-23 21:06:09,787 [INFO] Selected User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0
+2026-03-23 21:06:09,787 [INFO] Fetching page: https://books.toscrape.com/catalogue/page-1.html
+2026-03-23 21:06:10,808 [INFO] Page 1 processed. Current record count: 10
+2026-03-23 21:06:10,808 [INFO] Crawling finished. Total raw records: 10
+2026-03-23 21:06:10,809 [INFO] Selected User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2026-03-23 21:06:10,809 [INFO] Fetching page: https://books.toscrape.com/catalogue/page-1.html
+2026-03-23 21:06:11,821 [INFO] Page 1 processed. Current record count: 10
+2026-03-23 21:06:11,821 [INFO] Crawling finished. Total raw records: 10
+2026-03-23 21:06:11,822 [INFO] Raw records saved: data/raw/site_a_raw_20260323_210611.json
+2026-03-23 21:06:11,822 [INFO] Valid records saved: data/validated/site_a_valid_20260323_210611.json
+2026-03-23 21:06:11,822 [INFO] Invalid records saved: data/validated/site_a_invalid_20260323_210611.json
+2026-03-23 21:06:11,822 [INFO] Transformed records saved: data/transformed/site_a_normalized_20260323_210611.json
+2026-03-23 21:06:11,822 [INFO] Raw record count: 10
+2026-03-23 21:06:11,822 [INFO] Valid record count: 10
+2026-03-23 21:06:11,823 [INFO] Invalid record count: 0
+2026-03-23 21:06:11,823 [INFO] Transformed record count: 10
+2026-03-23 21:06:11,823 [INFO] Run summary saved: reports/latest_run_summary.json
+2026-03-23 21:06:11,823 [INFO] === Pipeline Finished ===
+2026-03-23 21:11:42,878 [INFO] === Web Crawling Pipeline Start ===
+2026-03-23 21:11:42,878 [INFO] source: site_a
+2026-03-23 21:11:42,878 [INFO] max_pages: 2
+2026-03-23 21:11:42,878 [INFO] limit: 10
+2026-03-23 21:11:42,878 [INFO] use_browser: False
+2026-03-23 21:11:42,878 [INFO] log_level: INFO
+2026-03-23 21:11:42,878 [INFO] Selected User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0
+2026-03-23 21:11:42,878 [INFO] Fetching page: https://books.toscrape.com/catalogue/page-1.html
+2026-03-23 21:11:43,889 [INFO] Page 1 processed. Current record count: 10
+2026-03-23 21:11:43,889 [INFO] Crawling finished. Total raw records: 10
+2026-03-23 21:11:43,890 [INFO] Raw records saved: data/raw/site_a_raw_20260323_211143.json
+2026-03-23 21:11:43,890 [INFO] Valid records saved: data/validated/site_a_valid_20260323_211143.json
+2026-03-23 21:11:43,890 [INFO] Invalid records saved: data/validated/site_a_invalid_20260323_211143.json
+2026-03-23 21:11:43,890 [INFO] Transformed records saved: data/transformed/site_a_normalized_20260323_211143.json
+2026-03-23 21:11:43,890 [INFO] Raw record count: 10
+2026-03-23 21:11:43,890 [INFO] Valid record count: 10
+2026-03-23 21:11:43,890 [INFO] Invalid record count: 0
+2026-03-23 21:11:43,890 [INFO] Transformed record count: 10
+2026-03-23 21:11:43,890 [INFO] Run summary saved: reports/latest_run_summary.json
+2026-03-23 21:11:43,890 [INFO] === Pipeline Finished ===

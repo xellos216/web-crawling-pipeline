@@ -1,8 +1,8 @@
 {
   "source": "site_a",
-  "started_at": "2026-03-23T20:48:55",
-  "finished_at": "2026-03-23T20:48:56",
-  "duration_seconds": 1.05164,
+  "started_at": "2026-03-23T21:11:42",
+  "finished_at": "2026-03-23T21:11:43",
+  "duration_seconds": 1.012559,
   "counts": {
     "raw": 10,
     "valid": 10,
@@ -10,9 +10,9 @@
     "transformed": 10
   },
   "paths": {
-    "raw": "data/raw/site_a_raw_20260323_204856.json",
-    "valid": "data/validated/site_a_valid_20260323_204856.json",
-    "invalid": "data/validated/site_a_invalid_20260323_204856.json",
-    "transformed": "data/transformed/site_a_normalized_20260323_204856.json"
+    "raw": "data/raw/site_a_raw_20260323_211143.json",
+    "valid": "data/validated/site_a_valid_20260323_211143.json",
+    "invalid": "data/validated/site_a_invalid_20260323_211143.json",
+    "transformed": "data/transformed/site_a_normalized_20260323_211143.json"
   }
 }

@@ -17,6 +17,8 @@ from src.monitoring.run_summary import (
     save_run_summary,
 )
 
+from src.crawlers.site_b_playwright import crawl_site_b
+
 
 def main():
     args = parse_args()
@@ -31,13 +33,19 @@ def main():
     logger.info("use_browser: %s", args.use_browser)
     logger.info("log_level: %s", args.log_level)
 
-    if args.source != "site_a":
+    if args.source == "site_a":
+        raw_records = crawl_site_a(
+            max_pages=args.max_pages,
+            limit=args.limit,
+        )
+    elif args.source == "site_b":
+        raw_records = crawl_site_b(
+            max_pages=args.max_pages,
+            limit=args.limit,
+        )
+    else:
         raise ValueError(f"Unsupported source: {args.source}")
 
-    raw_records = crawl_site_a(
-        max_pages=args.max_pages,
-        limit=args.limit,
-    )
     raw_path = save_raw_records(raw_records, args.source)
 
     validation_result = validate_listings(raw_records)

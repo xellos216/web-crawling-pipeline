@@ -10,15 +10,29 @@ def extract_item_id(detail_url: str) -> str:
     path = urlparse(detail_url).path.strip("/")
     parts = path.split("/")
 
-    if len(parts) >= 2:
-        return parts[-2]
+    if parts:
+        return parts[-1]
 
     return ""
 
 
 def parse_price(price_text: str) -> float:
     cleaned = "".join(ch for ch in price_text if ch.isdigit() or ch == ".")
-    return float(cleaned)
+    return float(cleaned) if cleaned else 0.0
+
+
+def detect_currency(price_text: str, source: str) -> str:
+    if "£" in price_text:
+        return "GBP"
+    if "$" in price_text:
+        return "USD"
+
+    if source == "site_a":
+        return "GBP"
+    if source == "site_b":
+        return "USD"
+
+    return "UNKNOWN"
 
 
 def normalize_status(status_text: str) -> str:
@@ -26,6 +40,10 @@ def normalize_status(status_text: str) -> str:
 
     if "in stock" in cleaned:
         return "in_stock"
+    if "out of stock" in cleaned:
+        return "out_of_stock"
+    if "unknown" in cleaned:
+        return "unknown"
 
     return "unknown"
 
@@ -45,7 +63,7 @@ def transform_listings(records: list[dict]) -> list[dict]:
             "item_id": extract_item_id(detail_url),
             "title": title,
             "price": parse_price(price_text),
-            "currency": "GBP",
+            "currency": detect_currency(price_text, source),
             "status": normalize_status(status_text),
             "detail_url": detail_url,
             "collected_at": datetime.now().isoformat(timespec="seconds"),

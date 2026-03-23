@@ -9,6 +9,11 @@ DEFAULT_LOG_LEVEL = "INFO"
 SITE_A_BASE_URL = "https://books.toscrape.com/catalogue/"
 SITE_A_START_URL = "https://books.toscrape.com/catalogue/page-1.html"
 
+SITE_B_START_URL = "https://webscraper.io/test-sites/e-commerce/ajax/computers/laptops"
+
+PLAYWRIGHT_HEADLESS = True
+PLAYWRIGHT_TIMEOUT_MS = 15000
+
 RAW_DATA_DIR = "data/raw"
 VALIDATED_DATA_DIR = "data/validated"
 TRANSFORMED_DATA_DIR = "data/transformed"

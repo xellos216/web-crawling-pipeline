@@ -10,7 +10,7 @@ def parse_args():
         "--source",
         type=str,
         required=True,
-        help="Data source (e.g., site_a, site_b)",
+        help="Data source (site_a or site_b)",
     )
 
     parser.add_argument(
