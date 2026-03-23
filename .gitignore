@@ -1,5 +1,26 @@
-.venv/
+# Python
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Virtual env
+.venv/
+
+# Data outputs
+data/
+
+# Logs
+logs/
+
+# Reports
+reports/
+
+# OS
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+
+# Aider
 .aider*
