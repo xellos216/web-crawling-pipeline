@@ -203,3 +203,25 @@
 2026-03-23 21:11:43,890 [INFO] Transformed record count: 10
 2026-03-23 21:11:43,890 [INFO] Run summary saved: reports/latest_run_summary.json
 2026-03-23 21:11:43,890 [INFO] === Pipeline Finished ===
+2026-03-23 21:14:19,098 [INFO] === Web Crawling Pipeline Start ===
+2026-03-23 21:14:19,098 [INFO] source: site_b
+2026-03-23 21:14:19,098 [INFO] max_pages: 2
+2026-03-23 21:14:19,098 [INFO] limit: 10
+2026-03-23 21:14:19,098 [INFO] use_browser: False
+2026-03-23 21:14:19,098 [INFO] log_level: INFO
+2026-03-23 21:14:19,098 [INFO] Selected User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2026-03-23 21:14:20,422 [INFO] Opening dynamic page: https://webscraper.io/test-sites/e-commerce/ajax/computers/laptops
+2026-03-23 21:14:22,963 [INFO] Processing dynamic page number: 1
+2026-03-23 21:14:23,106 [INFO] Dynamic page 1 processed. Current record count: 6
+2026-03-23 21:14:23,110 [INFO] No next page available for site_b
+2026-03-23 21:14:23,159 [INFO] Dynamic crawling finished. Total raw records: 6
+2026-03-23 21:14:23,160 [INFO] Raw records saved: data/raw/site_b_raw_20260323_211423.json
+2026-03-23 21:14:23,160 [INFO] Valid records saved: data/validated/site_b_valid_20260323_211423.json
+2026-03-23 21:14:23,160 [INFO] Invalid records saved: data/validated/site_b_invalid_20260323_211423.json
+2026-03-23 21:14:23,160 [INFO] Transformed records saved: data/transformed/site_b_normalized_20260323_211423.json
+2026-03-23 21:14:23,161 [INFO] Raw record count: 6
+2026-03-23 21:14:23,161 [INFO] Valid record count: 6
+2026-03-23 21:14:23,161 [INFO] Invalid record count: 0
+2026-03-23 21:14:23,161 [INFO] Transformed record count: 6
+2026-03-23 21:14:23,161 [INFO] Run summary saved: reports/latest_run_summary.json
+2026-03-23 21:14:23,161 [INFO] === Pipeline Finished ===

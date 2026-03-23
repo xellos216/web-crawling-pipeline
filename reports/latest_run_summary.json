@@ -1,18 +1,18 @@
 {
-  "source": "site_a",
-  "started_at": "2026-03-23T21:11:42",
-  "finished_at": "2026-03-23T21:11:43",
-  "duration_seconds": 1.012559,
+  "source": "site_b",
+  "started_at": "2026-03-23T21:14:19",
+  "finished_at": "2026-03-23T21:14:23",
+  "duration_seconds": 4.062667,
   "counts": {
-    "raw": 10,
-    "valid": 10,
+    "raw": 6,
+    "valid": 6,
     "invalid": 0,
-    "transformed": 10
+    "transformed": 6
   },
   "paths": {
-    "raw": "data/raw/site_a_raw_20260323_211143.json",
-    "valid": "data/validated/site_a_valid_20260323_211143.json",
-    "invalid": "data/validated/site_a_invalid_20260323_211143.json",
-    "transformed": "data/transformed/site_a_normalized_20260323_211143.json"
+    "raw": "data/raw/site_b_raw_20260323_211423.json",
+    "valid": "data/validated/site_b_valid_20260323_211423.json",
+    "invalid": "data/validated/site_b_invalid_20260323_211423.json",
+    "transformed": "data/transformed/site_b_normalized_20260323_211423.json"
   }
 }
