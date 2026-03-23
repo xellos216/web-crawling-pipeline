@@ -18,3 +18,31 @@
 2026-03-23 20:00:01,932 [INFO] Raw records saved: data/raw/site_a_20260323_200001.json
 2026-03-23 20:00:01,932 [INFO] Raw record count: 10
 2026-03-23 20:00:01,932 [INFO] === Pipeline Finished ===
+2026-03-23 20:08:12,035 [INFO] === Web Crawling Pipeline Start ===
+2026-03-23 20:08:12,035 [INFO] source: site_a
+2026-03-23 20:08:12,035 [INFO] max_pages: 2
+2026-03-23 20:08:12,035 [INFO] limit: 10
+2026-03-23 20:08:12,035 [INFO] use_browser: False
+2026-03-23 20:08:12,035 [INFO] log_level: INFO
+2026-03-23 20:08:12,035 [INFO] Fetching page: https://books.toscrape.com/catalogue/page-1.html
+2026-03-23 20:08:13,142 [INFO] Page 1 processed. Current record count: 10
+2026-03-23 20:08:13,142 [INFO] Crawling finished. Total raw records: 10
+2026-03-23 20:08:13,143 [INFO] Raw records saved: data/raw/site_a_20260323_200813.json
+2026-03-23 20:08:13,143 [INFO] Raw record count: 10
+2026-03-23 20:08:13,143 [INFO] === Pipeline Finished ===
+2026-03-23 20:16:03,021 [INFO] === Web Crawling Pipeline Start ===
+2026-03-23 20:16:03,021 [INFO] source: site_a
+2026-03-23 20:16:03,021 [INFO] max_pages: 2
+2026-03-23 20:16:03,021 [INFO] limit: 10
+2026-03-23 20:16:03,021 [INFO] use_browser: False
+2026-03-23 20:16:03,021 [INFO] log_level: INFO
+2026-03-23 20:16:03,021 [INFO] Fetching page: https://books.toscrape.com/catalogue/page-1.html
+2026-03-23 20:16:04,076 [INFO] Page 1 processed. Current record count: 10
+2026-03-23 20:16:04,076 [INFO] Crawling finished. Total raw records: 10
+2026-03-23 20:16:04,077 [INFO] Raw records saved: data/raw/site_a_raw_20260323_201604.json
+2026-03-23 20:16:04,077 [INFO] Valid records saved: data/validated/site_a_valid_20260323_201604.json
+2026-03-23 20:16:04,077 [INFO] Invalid records saved: data/validated/site_a_invalid_20260323_201604.json
+2026-03-23 20:16:04,077 [INFO] Raw record count: 10
+2026-03-23 20:16:04,077 [INFO] Valid record count: 10
+2026-03-23 20:16:04,077 [INFO] Invalid record count: 0
+2026-03-23 20:16:04,077 [INFO] === Pipeline Finished ===
